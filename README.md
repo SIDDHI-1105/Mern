@@ -69,28 +69,40 @@ All folders and projects are structured according to the course curriculum, with
 ---
 
 ## 📂 Repository Structure
-
 📦 mern-stack-learning
-┣ 📁 web-dev-basics
-┣ 📁 html
-┣ 📁 css
-┣ 📁 tailwind-css
-┣ 📁 javascript
-┣ 📁 dom-and-browser
-┣ 📁 advanced-js
-┣ 📁 js-projects
-┣ 📁 git-github
-┣ 📁 node-backend
-┣ 📁 databases
-┣ 📁 mongodb
-┣ 📁 react
-┣ 📁 fullstack-projects
-┣ 📁 nextjs
-┣ 📁 docker-devops
-┗ 📁 notes
 
-yaml
-Copy code
+├── 🌱 Fundamentals
+│   ├── web-dev-basics
+│   ├── html
+│   ├── css
+│   └── tailwind-css
+│
+├── 🧠 JavaScript
+│   ├── javascript
+│   ├── dom-and-browser
+│   ├── advanced-js
+│   └── js-projects
+│
+├── 🔧 Tooling
+│   └── git-github
+│
+├── 🖥 Backend
+│   ├── node-backend
+│   ├── databases
+│   └── mongodb
+│
+├── ⚛️ Frontend
+│   ├── react
+│   └── nextjs
+│
+├── 🌐 Full Stack
+│   └── fullstack-projects
+│
+├── 🐳 DevOps
+│   └── docker-devops
+│
+└── 📝 notes
+
 
 ---
 
