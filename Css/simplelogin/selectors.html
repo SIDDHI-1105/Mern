@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Selectors Demo</title>
+
+    <style>
+      /* 1. Universal Selector */
+      * {
+        font-family: Arial, sans-serif;
+      }
+
+      /* 2. Type Selector */
+      p {
+        color: blue;
+      }
+
+      /* 3. Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* 4. ID Selector */
+      #main-heading {
+        color: red;
+      }
+
+      /* 5. Attribute Selector */
+      input[type="text"] {
+        border: 2px solid green;
+      }
+
+      /* 6. Descendant Selector */
+      div p {
+        font-style: italic;
+      }
+
+      /* 7. Child Selector */
+      ul > li {
+        color: purple;
+      }
+
+      /* 8. Adjacent Sibling Selector */
+      h2 + p {
+        color: orange;
+      }
+
+      /* 9. General Sibling Selector */
+      h3 ~ p {
+        background-color: lightgray;
+      }
+
+      /* 10. Pseudo-class Selector */
+      button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      /* 11. Pseudo-element Selector */
+      p::first-letter {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* 12. Grouping Selector */
+      h1,
+      h2,
+      h3 {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="main-heading">CSS Selectors</h1>
+
+    <p>This is a paragraph</p>
+    <p class="highlight">This paragraph has a class</p>
+
+    <input type="text" placeholder="Text input" />
+    <input type="password" placeholder="Password input" />
+
+    <div>
+      <p>Paragraph inside div (descendant)</p>
+    </div>
+
+    <ul>
+      <li>Child item 1</li>
+      <li>Child item 2</li>
+    </ul>
+
+    <h2>Heading 2</h2>
+    <p>Paragraph just after h2</p>
+
+    <h3>Heading 3</h3>
+    <p>Sibling paragraph 1</p>
+    <p>Sibling paragraph 2</p>
+
+    <button>Hover me</button>
+  </body>
+</html>
