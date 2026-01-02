@@ -82,12 +82,6 @@
       }
 
       /* ---------- VARIATION 3 ---------- */
-      .nav3 {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-        padding: 0;
-      }
 
       .dropdown {
         position: relative;
@@ -98,7 +92,7 @@
         position: absolute;
         top: 25px;
         left: 0;
-        background: #222;
+        background: powderblue;
         padding: 10px;
         min-width: 160px;
       }
@@ -159,6 +153,59 @@
       .nav1 .login-button:hover {
         background-color: darkmagenta;
       }
+
+      /*--3rd nav bar --*/
+      .nav3 {
+        background-color: powderblue;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .nav3 ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .nav3 li {
+        display: inline;
+      }
+      .nav3 a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 10px 20px;
+        display: block;
+        position: relative;
+        color: #111;
+      }
+      .nav3 a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: darkblue;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+      }
+      .nav3 a:hover::after {
+        transform: scaleX(1);
+      }
+      .nav3 .login-button {
+        background-color: rgb(78, 78, 186);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .nav3 .login-button:hover {
+        background-color: darkblue;
+      }
     </style>
   </head>
   <body>
@@ -185,22 +232,28 @@
     </ul>
 
     <!-- VARIATION 3 -->
-    <h2>Variation 3: Horizontal with dropdown</h2>
-    <ul class="nav3">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+    <div class="nav-container">
+      <h2>Variation 3: Horizontal with dropdown</h2>
+      <nav class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
 
-      <li class="dropdown">
-        <a href="#">Our Story Team Contact</a>
-        <div class="dropdown-content">
-          <a href="#">Our Story</a>
-          <a href="#">Team</a>
-          <a href="#">Contact</a>
-        </div>
-      </li>
+          <li class="dropdown">
+            <a href="#">Our Story Team Contact</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact</a>
+            </div>
+          </li>
 
-      <li><a href="#">Products</a></li>
-    </ul>
-    <button>Login</button>
+          <li><a href="#">Products</a></li>
+          <li>
+            <button class="login-button">Login</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
 </html>
